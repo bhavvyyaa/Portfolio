@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya V | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bhavya V</h1>
+            <p>A Computer Science student exploring backend development, web projects, and creative problem solving.</p>
+            <div class="social-links">
+                <a href="https://github.com/bhavvyyaa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bhavya-v-04a577339/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm a developer with a passion for building clean, efficient, and scalable web applications. My primary expertise lies in Python and frameworks like Flask, and I’m also expanding my skills in Java and backend development. I enjoy turning complex problems into simple, intuitive solutions while blending technical precision with creativity.
+                </p>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>HTML & CSS</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>Postman</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Communication</li>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div id="projects-header">
+                    <h2>My Projects</h2>
+                    <span id="projects-toggle-icon">+</span>
+                </div>
+                
+                <div id="projects-container" class="hidden">
+                    <div class="project">
+                        <h3>Chayalytics – Because your chaya can tell your story</h3>
+                        <p>Chayalytics is a fun hackathon project built to explore how everyday moments can be reimagined with technology. It analyzes the color of tea (chaya) and uses it to predict mood or suggest the next tea craving time.</p>
+                        <p>The idea was created to show that tech doesn’t always have to be serious — it can also be quirky, creative, and engaging while still demonstrating real technical skills in image processing and web development.</p>
+                        <div class="tech-stack">
+                            <span>HTML/CSS</span>
+                        </div>
+                        <a href="https://github.com/bhavvyyaa/useless_projects_chayalytics.git" target="_blank">
+                            <button>View on GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out to me.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your-email@example.com">bhavyakrishnan2006@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9495166350</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Bhavya. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        const projectsHeader = document.getElementById('projects-header');
+        const projectsContainer = document.getElementById('projects-container');
+        const toggleIcon = document.getElementById('projects-toggle-icon');
+
+        projectsHeader.addEventListener('click', () => {
+            const isHidden = projectsContainer.classList.toggle('hidden');
+            toggleIcon.classList.toggle('rotated');
+            
+            if (isHidden) {
+                toggleIcon.textContent = '+';
+            } else {
+                toggleIcon.textContent = '-';
+            }
+        });
+    </script>
+</body>
+</html>
+
