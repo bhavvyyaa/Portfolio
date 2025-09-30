@@ -1,7 +1,7 @@
 # Bhavya V - Personal Portfolio #
 Welcome to the source code for my personal portfolio website. This project is a clean, single-page site designed to showcase my skills, projects, and contact information. It was built from scratch using Python and Flask.
 
-You can view the live version here: [LINK TO YOUR DEPLOYED WEBSITE] (You can add this link later when you deploy it!)
+You can view the live version here: (https://portfolio-rose-one-98.vercel.app/)
 
 ## Features ##
 * Aesthetic & Responsive Design: A modern, minimalist layout that looks great on any device.
